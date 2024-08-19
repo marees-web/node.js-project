@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    h1{
+    background-color: yellow;
+    color: blue;
+    font-size: large;
+    font-style: italic;
+    font-weight: 800;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid red;
+}
+button{
+    color: red;
+    background-color: black;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    border: none;
+    outline: red;
+}
+   </style>
+ 
+</head>
+<body>
+    <h1 id="text">First Static file server</h1>
+    <button onclick="colorChange()">Click</button>
+
+
+   <script >
+     const text =document.getElementById("text");
+
+    function colorChange(){
+    text.innerHTML="Welcome";
+    text.style.color="red"
+    text.style.background="limegreen"
+   
+
+    }
+   </script>
+</body>
+</html>
